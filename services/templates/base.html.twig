@@ -14,9 +14,11 @@
         {% endblock %}
     </head>
     <body>
+    <table>
         {% for post in posts %}
-            {{ post.text }}
+           <tr><td>{{ post.id }}</td><td> {{ post.time | date("m/d/Y")}} </td><td>{{ post.text }}</td></tr>
         {% endfor %}
+        </table>
         {% block body %}{% endblock %}
     </body>
 </html>
