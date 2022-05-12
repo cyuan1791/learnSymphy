@@ -14,7 +14,9 @@
         {% endblock %}
     </head>
     <body>
-        {{message }}
+        {% for post in posts %}
+            {{ post.text }}
+        {% endfor %}
         {% block body %}{% endblock %}
     </body>
 </html>
