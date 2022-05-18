@@ -1,0 +1,21 @@
+{% extends 'base.html.twig' %}
+
+
+{% block body %}
+
+
+<table class="table table-stripe">
+<thread>
+<th>Id </th>
+<th>Name</th>
+<th>Desc</th>
+</thread>
+{% for dish in dishes %}
+ <tr>
+ <td>{{dish.id}}</td>
+ <td>{{dish.name}}</td>
+ <td>{{dish.description}}</td>
+ </tr>
+{% endfor %}
+</table>
+{% endblock %}
