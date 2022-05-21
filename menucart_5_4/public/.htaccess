@@ -1,0 +1,4 @@
+RewriteEngine on
+
+
+RewriteRule ^ws.symfony/menucart_5_4/public/?([a-zA-Z0-9]+)$ /index.php/$1 [L]
